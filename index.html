@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <script src='index.js'></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <h2>Countries List</h2>
+    <div class='data-table-container'>
+        <div class='data-table-header-container'>
+            <div class="data-table-header-entries-container">
+                <label>Show <select id='entries'>
+                        <option value=5>5</option>
+                        <option value=10>10</option>
+                        <option value=25>25</option>
+                        <option value=50>50</option>
+                        <option value=100>100</option>
+                    </select> Entries</label>
+
+            </div>
+            <div class="data-table-header-search-container">
+                <label>Search:</label><input type='text' id='search' />
+            </div>
+        </div>
+        <div class="table-container">
+            <table class="table-sortable">
+                <thead>
+                    <tr>
+                        <th data-key='name'>Name</th>
+                        <th data-key='capital'>Capital</th>
+                        <th data-key='population'>Population</th>
+                        <th data-key='region'>Continent</th>
+                        <th data-key='demonym'>Demonym</th>
+                        <th class="not-sort">Currency</th>
+                        <th class="not-sort">Flag</th>
+                    </tr>
+                </thead>
+                <tbody id="content-body">
+                    <tr class="no-data">
+                        <th colspan="7">Loading Please Wait...</th>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th data-key='name'>Name</th>
+                        <th data-key='capital'>Capital</th>
+                        <th data-key='population'>Population</th>
+                        <th data-key='region'>Continent</th>
+                        <th data-key='demonym'>Demonym</th>
+                        <th class="not-sort">Currency</th>
+                        <th class="not-sort">Flag</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datatable-footer-container">
+            <div class="show-container">
+
+            </div>
+            <div class="pagination-container">
+                <button id='prev'>Previous</button>
+                <div class="button-div">
+                    <button id='page_1' class='activePage'>1</button>
+                    <button id='page_2'>2</button>
+                    <button id='page_3'>3</button>
+                    <button id='page_4'>4</button>
+                    <button id='page_5'> 5</button>
+                </div>
+                <button id="next">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
